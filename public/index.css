@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+  letter-spacing: 3px;
+  
+}
+
+.card {
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 6px;
+  border: solid 1px #1a1146;
+  background-color: #1a1146;
+  color: white;
+  cursor: pointer;
+  height: 158px;
+  width: 115px;
+  font-size: 17.5px;
+}
+
+.card:hover,
+.card:focus {
+  background-color: #5135DE;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 138px);
+  grid-auto-rows: 1fr;
+  gap: 21px 3px;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 24px 0 30px 18px;
+}
+
+.card.selected {
+  background-color: initial;
+  color: #141c3a;
+  border: solid 1px #141c3a;
+}
+
+.card.matched {
+  color: #4ce67f;
+}
+
+.card.no-match {
+  color: #f01c0d;
+}
+
+.logo-placeholder {
+  width: 60px;
+}
+
+.score-container {
+  background-color: #d0e4e6;
+  padding: 18px 158px 23px 159px;
+  text-align: center;
+  font-size: 33px;
+}
+
+.footer > button {
+  width: 50%;
+  padding: 19px 40px 19px 40px;
+  font-size: 21px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: #1a1146;
+}
+
+.start-button:hover,
+.start-button:focus {
+  background-color: #5A4E91;
+}
+
+.try-new-pair-button {
+  background-color: #5135DE;
+}
+
+.try-new-pair-button:hover,
+.try-new-pair-button:focus {
+  background-color: #352391;
+}
+
+@media (max-width: 580px) {
+ .score-container {
+    width: 263px;  
+  }
+  .score-container {
+    margin-bottom: 140px;
+  }
+  .footer {
+    width: 580px;
+    margin-top: 120px;
+   }
+} 
+
+
+
+
