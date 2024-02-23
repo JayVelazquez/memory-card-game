@@ -45,7 +45,8 @@ const initialState = [
       
       case 'board/resetCards':
         return state.map(card => ({...card, visible: false}));
-      default:
+      
+        default:
         return state;
     }
   }

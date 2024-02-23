@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { selectVisibleIDs, flipCard, selectMatchedIDs, resetCards } from '../../boardSlice.js';
-import logo from '../../../../logo.png'; 
+import logo from '../../../../logo.webp'; 
 
 
 let cardLogo = logo;
